@@ -3,10 +3,8 @@ Kim
 
 This is just a compilation of all some frequent includes I do on my ruby code
 
-What's included?
-----------------
-
-### Hash
+Hash
+----
 
 ### Hash: deep_merge
 
