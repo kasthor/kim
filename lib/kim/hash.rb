@@ -20,6 +20,10 @@ module Kim
     def deep_has_key? *keys
       has_key?(key = keys.shift) && ( keys.count < 1 || self[key].deep_has_key?(*keys))
     end
+
+    def deep_value *keys
+      keys.count <= 1 ? self[keys.first] : self[keys.shift].deep_val(*keys)
+    end
   end
 end
 
