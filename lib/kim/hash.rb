@@ -22,7 +22,7 @@ module Kim
     end
 
     def deep_value *keys
-      keys.count <= 1 ? self[keys.first] : self[keys.shift].deep_value(*keys)
+      keys.count <= 1 ? self[keys.first] : self[keys.shift].deep_value(*keys) rescue nil
     end
   end
 end
