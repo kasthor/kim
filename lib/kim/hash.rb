@@ -16,6 +16,10 @@ module Kim
     def deep_merge! other
       deep_merge other, true
     end 
+
+    def deep_has_key? *keys
+      has_key?(key = keys.shift) && ( keys.count < 1 || self[key].deep_has_key?(*keys))
+    end
   end
 end
 
