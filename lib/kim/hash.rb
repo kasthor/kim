@@ -8,7 +8,7 @@ module Kim
           if has_key? key and result[key].is_a? Hash and value.is_a? Hash
             { key => result[key].deep_merge(value) }
           else
-            other
+            { key => value }
           end 
         )   
       end 
