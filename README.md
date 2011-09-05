@@ -17,3 +17,10 @@ Provide multiple keys and it will tell you if they are contained in the current 
 ### deep_value
 
 Finds a value taking nesting into account
+
+Fixnum
+------
+
+### sign
+
+Returns 1 or -1 matching the sign of the current fixnum
