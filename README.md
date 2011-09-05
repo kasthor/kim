@@ -24,3 +24,11 @@ Fixnum
 ### sign
 
 Returns 1 or -1 matching the sign of the current fixnum
+
+Array
+_____
+
+### all_equal?
+
+Return true if all the items of the array are equal
+Note: an empty array will solve to true while i'm unsure it's desired behavior
