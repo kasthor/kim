@@ -18,6 +18,10 @@ Provide multiple keys and it will tell you if they are contained in the current 
 
 Finds a value taking nesting into account
 
+### select_keys
+
+Receive a list of keys and return a hash subset containing the keys specified
+
 Fixnum
 ------
 

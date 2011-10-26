@@ -12,4 +12,8 @@ describe "Hash Additions" do
   it "should merge a key only exists in other" do
     {:a => {:aa => :c}}.deep_merge({:a=> {:ab => :c}, :b => {:ba => :c}}).should == {:a=> {:aa => :c, :ab => :c}, :b => {:ba => :c}}
   end
+
+  it "should select keys from a hash, returning a new hash containing those keys" do
+    {:a => 1, :b => 2, :c => 3, :d => 4}.select_keys(:a,:b).should == {:a => 1, :b => 2}
+  end
 end
